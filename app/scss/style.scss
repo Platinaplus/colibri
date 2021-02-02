@@ -93,7 +93,7 @@ body {
 }
 
 .hero {
-  padding: 100px 0;
+  padding: 100px 0 50px;
 
   &__top {
     display: flex;
@@ -154,7 +154,7 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
   }
-  
+
 }
 
 .about {
@@ -218,13 +218,15 @@ body {
   align-items: center;
   padding: 0 15px;
   margin-bottom: 30px;
-  
+
 
   &__img {
-    max-height: 300px;
+    height: 250px;
+    object-fit: contain;
     overflow: hidden;
     transition: .3s;
-    &:hover{
+
+    &:hover {
       transform: translateY(-10px);
     }
   }
@@ -240,7 +242,7 @@ body {
     }
   }
 
-  &__subname{
+  &__subname {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -313,14 +315,17 @@ body {
   }
 
 }
-.slick-active{
-  button{
-    background-color:#e50046;
+
+.slick-active {
+  button {
+    background-color: #e50046;
   }
 }
-.connection{
+
+.connection {
   margin-bottom: 100px;
-  &__text{
+
+  &__text {
     display: block;
     max-width: 70%;
     margin: 0 auto;
@@ -329,11 +334,13 @@ body {
     margin-bottom: 50px;
   }
 }
-.form{
+
+.form {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  &__input{
+
+  &__input {
     width: 300px;
     height: 30px;
     padding: 0 10px;
