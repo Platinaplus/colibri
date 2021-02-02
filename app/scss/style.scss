@@ -11,7 +11,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  color:#333;
+  color: #333;
   display: flex;
   flex-direction: column;
 }
@@ -26,11 +26,30 @@ body {
   margin: 0 auto;
 }
 
-.title{
+.title {
   font-size: 32px;
   text-align: center;
   margin-bottom: 50px;
   text-transform: uppercase;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 60px;
+  color: #fff;
+  text-shadow: initial;
+  background: url(../images/button-red.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px;
+  position: relative;
+  text-align: center;
 }
 
 .header {
@@ -40,18 +59,21 @@ body {
     justify-content: space-between;
   }
 }
-.contact{
-  &__items{
+
+.contact {
+  &__items {
     display: flex;
   }
-  &__item{
+
+  &__item {
     display: block;
     max-width: 200px;
     padding: 0 20px;
     position: relative;
     font-size: 14px;
     color: #333;
-    &:not(:last-child)::after{
+
+    &:not(:last-child)::after {
       content: "";
       height: 63px;
       width: 1px;
@@ -61,52 +83,60 @@ body {
       right: 0;
     }
 
-    span{
+    span {
       display: block;
       font-size: 16px;
-      color:  #e50046;
+      color: #e50046;
     }
-    
+
   }
 }
 
-.hero{
+.hero {
   padding: 100px 0;
-  &__top{
+
+  &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
   }
-  &__left{
+
+  &__left {
     margin-right: 30px;
   }
-  &__title{
+
+  &__title {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 30px;
     text-transform: uppercase;
 
   }
-  &__descr{
+
+  &__descr {
     font-size: 24px;
   }
-  &__img{
+
+  &__img {
     height: 350px;
     object-fit: cover;
     border-radius: 4px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
-  &__advantages{
+
+  &__advantages {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
   }
-  &__advantage{
+
+  &__advantage {
     max-width: 30%;
     padding: 0 10px 0 50px;
     position: relative;
-    &::before{
+
+    &::before {
       content: "";
       width: 50px;
       height: 50px;
@@ -118,78 +148,194 @@ body {
       left: -15px;
     }
   }
-  &__name{
+
+  &__name {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
   }
-  &__link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 230px;
-    height: 60px;
-    color: #fff;
-    text-shadow: initial;
-    background: url(../images/button-red.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 12px;
-    position: relative;
-    text-align: center;
-  }
+  
 }
-.about{
+
+.about {
   padding-bottom: 100px;
-  &__text{
+
+  &__text {
     font-size: 24px;
     text-align: justify;
     margin-bottom: 30px;
-    span{
+
+    span {
       text-transform: uppercase;
       font-weight: bold;
-      color:  #e50046;
+      color: #e50046;
     }
   }
 }
-.catalog{
-  &__subtitle{
+
+.catalog {
+  padding-bottom: 100px;
+
+  &__subtitle {
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
-    span{
+    margin-bottom: 30px;
+
+    span {
       font-size: 18px;
       display: block;
     }
   }
-  &__inner{
+
+  &__inner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
-}
-.card{
-  max-width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-  &__img{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    overflow: hidden;
-  }
-  &__name{
-    font-size: 22px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  &__descr{
-    display: block;
+
+  &__theme {
+    padding: 30px 0;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "";
+      width: 80%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #e50046;
+    }
   }
 }
 
+.card {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  
+
+  &__img {
+    max-height: 300px;
+    overflow: hidden;
+    transition: .3s;
+    &:hover{
+      transform: translateY(-10px);
+    }
+  }
+
+  &__name {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+
+    span {
+      text-transform: none;
+    }
+  }
+
+  &__subname{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    display: block;
+    text-align: justify;
+  }
+}
+
+.feedback {
+  padding-bottom: 100px;
+
+  &__item {
+    padding: 0 15px;
+    margin-bottom: 50px;
+  }
+
+  &__body {
+    display: block;
+    height: 186px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e50046;
+    overflow: auto;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+  }
+
+  &__btn {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/left_arrow.svg);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+  }
+
+  &__btn--next {
+    right: 0;
+    transform: rotate(180deg);
+    margin-right: -50px;
+  }
+
+  &__btn--prev {
+    margin-left: -50px;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin-right: 20px;
+    padding: 0;
+    font-size: 0px;
+    line-height: 8.7px;
+    background-color: #fde3ce;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+}
+.slick-active{
+  button{
+    background-color:#e50046;
+  }
+}
+.connection{
+  margin-bottom: 100px;
+  &__text{
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+}
+.form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__input{
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+  }
+}
