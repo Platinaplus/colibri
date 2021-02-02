@@ -1,0 +1,195 @@
+@import 'reset';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color:#333;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.header {
+  &__inner {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.contact{
+  &__items{
+    display: flex;
+  }
+  &__item{
+    display: block;
+    max-width: 200px;
+    padding: 0 20px;
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    &:not(:last-child)::after{
+      content: "";
+      height: 63px;
+      width: 1px;
+      position: absolute;
+      background-color: #e50046;
+      top: 16px;
+      right: 0;
+    }
+
+    span{
+      display: block;
+      font-size: 16px;
+      color:  #e50046;
+    }
+    
+  }
+}
+
+.hero{
+  padding: 100px 0;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  &__left{
+    margin-right: 30px;
+  }
+  &__title{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+  }
+  &__descr{
+    font-size: 24px;
+  }
+  &__img{
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+  &__advantages{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  &__advantage{
+    max-width: 30%;
+    padding: 0 10px 0 50px;
+    position: relative;
+    &::before{
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/icon.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 25px;
+      left: -15px;
+    }
+  }
+  &__name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    color: #fff;
+    text-shadow: initial;
+    background: url(../images/button-red.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px;
+    position: relative;
+    text-align: center;
+  }
+}
+.about{
+  padding-bottom: 100px;
+  &__text{
+    font-size: 24px;
+    text-align: justify;
+    margin-bottom: 30px;
+    span{
+      text-transform: uppercase;
+      font-weight: bold;
+      color:  #e50046;
+    }
+  }
+}
+.catalog{
+  &__subtitle{
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    span{
+      font-size: 18px;
+      display: block;
+    }
+  }
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.card{
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  &__img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  &__name{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__descr{
+    display: block;
+  }
+}
+
