@@ -1,10 +1,1 @@
-.DS_Store
-.idea/
-.idea/*
-.vscode
-*.sublime*
-npm-debag.*
-node_modules/
-package-lock.json
-app/css/*
-.jshintrc
+node_modules
