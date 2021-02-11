@@ -1,9 +1,11 @@
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
+
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }
+
 @import 'reset';
 @import '../../node_modules/slick-carousel/slick/slick.scss';
 @import'../scss/jquery.fancybox.scss';
@@ -218,13 +220,28 @@ body {
       background-color: #e50046;
     }
   }
+
+  &__descr {
+    font-size: 20px;
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+
+    span {
+      display: block;
+      margin-top: 20px;
+    }
+    &--down{
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .card {
-  max-width: 30%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0 15px;
   margin-bottom: 30px;
 
@@ -261,6 +278,20 @@ body {
   &__descr {
     display: block;
     text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  &__table {
+    text-align: left;
+    background: #ccc;
+    margin-right: 30px;
+
+    th,
+    td {
+      padding: 5px;
+      background: #fff;
+
+    }
   }
 }
 
@@ -356,25 +387,75 @@ body {
   }
 }
 
-.modal{
+.modal {
   display: none;
-  box-shadow:1px 1px 10px 4px rgba(0,0,0,1);
-  &__list{
+  box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 1);
+
+  &__list {
     margin: 0 auto;
   }
-  &__item{
+  &__list--dot{
+    list-style: circle;
+  }
+  &__list-item{
+    margin-bottom: 15px;
+  }
+
+  &__item {
     margin-bottom: 30px;
     font-style: italic;
     font-size: 18px;
   }
-  &__img{
+
+  &__top{
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  &__img {
     display: block;
     margin: 0 auto;
-    max-width:30%;
+    max-width: 30%;
+  }
+
+  &__table {
+    text-align: left;
+    background: #ccc;
+    margin-right: 30px;
+
+    th,
+    td {
+      padding: 5px;
+      background: #fff;
+
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-style: italic;
+
+    span {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    font-size: 20px;
+    font-weight: bold;
+    color: #e50046;
   }
 }
 
-.fancybox-slide{
+.fancybox-slide {
   left: 50%;
   transform: translate(-50%);
   width: 50%;
@@ -385,10 +466,16 @@ body {
   margin: 50px auto;
   text-align: center;
   overflow: hidden;
+  &--left{
+    margin-left: 0;
+  }
 }
+
 .arrow-btn {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 15px 30px;
   text-decoration: none;
   color: #e50046;
@@ -398,11 +485,31 @@ body {
   letter-spacing: .4em;
   transition: .2s;
   transition-delay: .1s;
+  vertical-align: middle;
+
+  svg {
+    polygon {
+      fill: #e50046;
+      stroke: #e50046;
+      transition: .2s;
+      transition-delay: .1s;
+    }
+
+  }
 }
+
 .arrow-btn:hover {
   color: white;
   padding: 15px 35px;
+
+  svg {
+    polygon {
+      fill: #fff;
+      stroke: #fff;
+    }
+  }
 }
+
 .arrow-btn span {
   position: absolute;
   top: -2px;
@@ -413,6 +520,7 @@ body {
   overflow: hidden;
   transition: .35s cubic-bezier(.215, .61, .215, 1);
 }
+
 .arrow-btn span:before {
   content: "";
   position: absolute;
@@ -424,6 +532,7 @@ body {
   transform: skew(-15deg, 0);
   transition: .5s;
 }
+
 .arrow-btn:after {
   content: "";
   position: absolute;
@@ -436,11 +545,12 @@ body {
   background: #e50046;
   transition: .5s;
 }
+
 .arrow-btn:hover:after {
   width: 140%;
   left: -20%;
 }
+
 .arrow-btn:hover span:before {
   left: -25%;
 }
-
