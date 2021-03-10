@@ -31,7 +31,7 @@
   </header>
   <main class="main">
     <section class="hero">
-      <div class="container">
+      <div class="container hero__container">
         <div class="hero__top">
           <div class="hero__left">
             <h1 class="hero__title">Ищете вкусную основу для бизнеса?</h1>
@@ -58,10 +58,10 @@
               cumque nulla dolor voluptatem.</p>
           </div>
         </div>
-        <a class="btn hero__link" href="#catalog">Перейти в каталог</a>
+        <!-- <a class="btn hero__link" href="#catalog">Перейти в каталог</a> -->
       </div>
     </section>
-    <section class="about">
+    <!-- <section class="about">
       <div class="container">
         <h2 class="title about__title">О нас</h2>
         <p class="about__text">
@@ -72,15 +72,43 @@
           хлеб не оставят равнодушными ваших покупателей.
         </p>
       </div>
-    </section>
+    </section> -->
     <section class="catalog" id="catalog">
       <div class="container">
-        <h2 class="title catalog__title">Каталог продукции</h2>
-        <div class="catalog__theme">
-          <h4 class="catalog__subtitle">Булочки для бургеров</h4>
-          <p class="catalog__descr">Булочка для бургера идеальна по вкусу: в меру соленая и сладкая, нежная, что
+        <div class="banner">
+          <h2 class="title banner__title">Наша продукция</h2>
+        </div>
+        <div class="photos">
+          <div class="bg"></div>
+          <div class="photos__wrapper">
+            <a class="photos__link" href="#burger">
+              <img class="photos__item" src="images/burger1.jpg" alt="булочки для бургеров">
+              <h2 class="photos__theme">Булочки для бургеров и хотдогов</h2>
+              <span class="photos__descr">Идеальные по вкусу: в меру соленые и сладкие, нежные, что
+                подчеркнет вкус ваших изделий, устоять просто невозможно.</span>
+            </a>
+          </div>
+          <div class="photos__wrapper">
+            <a class="photos__link" href="#">
+              <img class="photos__item" src="images/hotdog.jpg" alt="булочки для бургеров">
+              <h2 class="photos__theme">Булочки для ресторанов</h2>
+              <span class="photos__descr">Идеальные по вкусу: в меру соленые и сладкие, нежные, что
+                подчеркнет вкус ваших изделий, устоять просто невозможно.</span>
+            </a>
+          </div>
+          <div class="photos__wrapper">
+            <a class="photos__link" href="#bread">
+              <img class="photos__item" src="images/tosts.jpg" alt="хлеб для тостов">
+              <h2 class="photos__theme">Тостовый хлеб</h2>
+              <span class="photos__descr">Тостовый хлеб и тостер – парочка, призванная облегчить жизнь домохозяек</span>
+            </a>
+            </div>
+        </div>
+        <div id= "burger" class="catalog__theme">
+          <h4 class="catalog__subtitle">Булочки для бургеров и хотдогов</h4>
+          <!-- <p class="catalog__descr">Булочка для бургера идеальна по вкусу: в меру соленая и сладкая, нежная, что
             подчеркнет вкус ваших бургеров, устоять просто невозможно. <span>Традиционные булочки придутся по вкусу
-              ценителям классики, яркие булочки для креативной публики.</span> </p>
+              ценителям классики, яркие булочки для креативной публики.</span> </p> -->
           <div class="catalog__recepts">
             <div class="modal" id="recept">
               <div class="modal__subtitle">
@@ -101,10 +129,7 @@
                 </li>
               </ol>
             </div>
-            <div class="button-wrapper">
-              <a class="arrow-btn" data-fancybox data-src="#recept" href="javascript:;">Рекомендации по
-                выпеканию<span></span></a>
-            </div>
+
           </div>
           <div class="catalog__inner">
             <div class="card">
@@ -314,30 +339,169 @@
             <div class="card">
               <img class="card__img" src="images/IMG_1710.jpg" alt="классическая булочка">
               <div class="card__name">красная</div>
-              <p class="card__descr">Булочка для бургера идеальна по вкусу: в меру соленая и сладкая, нежная. Что
-                подчеркнет вкус ваших бургеров, устоять просто невозможно. Традиционные булочки придутся по вкусу
-                ценителям классики, яркие булочки для креативной публики.</p>
+              <table class="card__table">
+                <tr>
+                  <th></th>
+                  <th>100 мм</th>
+                  <th>125 мм</th>
+                </tr>
+                <tr>
+                  <th>EAN-код короба</th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Вес</th>
+                  <td>60 г</td>
+                  <td>80 г</td>
+                </tr>
+                <tr>
+                  <th>Шт в коробке</th>
+                  <td>60</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <th>Кор/пал</th>
+                  <td>33</td>
+                  <td>33</td>
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+                  <td>RU</td>
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
             </div>
             <div class="card">
               <img class="card__img" src="images/IMG_1732.jpg" alt="классическая булочка">
               <div class="card__name">черная</div>
-              <p class="card__descr">Булочка для бургера идеальна по вкусу: в меру соленая и сладкая, нежная. Что
-                подчеркнет вкус ваших бургеров, устоять просто невозможно. Традиционные булочки придутся по вкусу
-                ценителям классики, яркие булочки для креативной публики.</p>
+              <table class="card__table">
+                <tr>
+                  <th></th>
+                  <th>100 мм</th>
+                  <th>125 мм</th>
+                </tr>
+                <tr>
+                  <th>EAN-код короба</th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Вес</th>
+                  <td>60 г</td>
+                  <td>80 г</td>
+                </tr>
+                <tr>
+                  <th>Шт в коробке</th>
+                  <td>60</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <th>Кор/пал</th>
+                  <td>33</td>
+                  <td>33</td>
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+                  <td>RU</td>
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
             </div>
             <div class="card">
               <img class="card__img" src="images/IMG_1724.jpg" alt="классическая булочка">
               <div class="card__name">зеленая</div>
-              <p class="card__descr">Булочка для бургера идеальна по вкусу: в меру соленая и сладкая, нежная. Что
-                подчеркнет вкус ваших бургеров, устоять просто невозможно. Традиционные булочки придутся по вкусу
-                ценителям классики, яркие булочки для креативной публики.</p>
+              <table class="card__table">
+                <tr>
+                  <th></th>
+                  <th>100 мм</th>
+                  <th>125 мм</th>
+                </tr>
+                <tr>
+                  <th>EAN-код короба</th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Вес</th>
+                  <td>60 г</td>
+                  <td>80 г</td>
+                </tr>
+                <tr>
+                  <th>Шт в коробке</th>
+                  <td>60</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <th>Кор/пал</th>
+                  <td>33</td>
+                  <td>33</td>
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+                  <td>RU</td>
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
             </div>
+          </div>
+          <div class="button-wrapper">
+            <a class="arrow-btn" data-fancybox data-src="#recept" href="javascript:;">Рекомендации по
+              выпеканию<span></span></a>
           </div>
         </div>
         <div class="catalog__theme">
-          <h4 class="catalog__subtitle">Булочки для хотдогов</h4>
+          <!-- <h4 class="catalog__subtitle">Булочки для хотдогов</h4>
           <p class="catalog__descr">Мягкая пшеничная булочка c кунжутом для датского хот-дога<span>Равномерно
-              пропеченная, с однородным мякишем и надрезом сбоку</span> </p>
+              пропеченная, с однородным мякишем и надрезом сбоку</span> </p> -->
           <div class="modal" id="recept2">
             <div class="modal__subtitle">
               Та самая булочка для хот-дога, которую все знают и любят. Знакомый с детства вкус для поклонников
@@ -358,14 +522,12 @@
               </li>
             </ol>
           </div>
-          <div class="button-wrapper">
-            <a class="arrow-btn" data-fancybox data-src="#recept2" href="javascript:;">Рекомендации по
-              выпеканию<span></span></a>
-          </div>
           <div class="catalog__inner">
             <div class="card">
               <img class="card__img" src="images/IMG_1704.jpg" alt="датская">
               <div class="card__name">Датская</div>
+              <p class="">Мягкая пшеничная булочка c кунжутом для датского хот-дога<span>Равномерно
+                пропеченная, с однородным мякишем и надрезом сбоку</span> </p>
               <table class="modal__table">
                 <tr>
                   <th></th>
@@ -581,8 +743,12 @@
                 ценителям классики, яркие булочки для креативной публики.</p>
             </div>
           </div>
+          <div class="button-wrapper">
+            <a class="arrow-btn" data-fancybox data-src="#recept2" href="javascript:;">Рекомендации по
+              выпеканию<span></span></a>
+          </div>
         </div>
-        <div class="catalog__theme">
+        <div id="bread" class="catalog__theme">
           <h4 class="catalog__subtitle">тостовый хлеб</h4>
           <p class="catalog__descr catalog__descr--down">
             Хлеб – всему голова, он ещё и может быть совершенно разных видов, так что даже самые привередливые гурманы
@@ -799,7 +965,8 @@
             <div class="card">
               <img class="card__img" src="images/IMG_1808.jpg" alt="классическая панини">
               <div class="card__name">Классическая панини</div>
-              <p class="card__descr">Итальянская булочка, изготовляемая из пшеничной муки и дрожжей, которая при желании может вместе с ингредиентами внутри поджариваться на гриле с рёбрами</p>
+              <p class="card__descr">Итальянская булочка, изготовляемая из пшеничной муки и дрожжей, которая при желании
+                может вместе с ингредиентами внутри поджариваться на гриле с рёбрами</p>
             </div>
             <div class="card">
               <img class="card__img" src="images/IMG_1833.jpg" alt="панини с ветчиной">

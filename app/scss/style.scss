@@ -184,6 +184,66 @@ body {
   }
 }
 
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-image: url(../images/bulki.jpg);
+  background-size: cover;
+  background-position: 100 center;
+  margin-bottom: 30px;
+
+  &__title {
+    font-family: 'Verdana', sans-serif;
+    color: white;
+    font-size: 44px;
+    text-shadow: 0 3px 16px rgba(10, 10, 10, 0.5);
+    text-transform: none;
+  }
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  &__wrapper {
+    width: 31%;
+
+    & img {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__theme {
+    font-size: 21px;
+    line-height: 26px;
+    color: #e50046;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    font-size: 17px;
+    color: #5f6062;
+    text-align: justify;
+    font-weight: 600;
+  }
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 130px;
+  width: 100vw;
+  height: 1200px;
+  z-index: -1;
+  background-image: url('../images/bg.png');
+}
+
+
 .catalog {
   padding-bottom: 100px;
 
@@ -202,7 +262,8 @@ body {
   &__inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+
   }
 
   &__theme {
@@ -232,7 +293,8 @@ body {
       display: block;
       margin-top: 20px;
     }
-    &--down{
+
+    &--down {
       margin-bottom: 20px;
     }
   }
@@ -244,6 +306,10 @@ body {
   flex-direction: column;
   padding: 0 15px;
   margin-bottom: 30px;
+  transition: .5s;
+  &:hover{
+    box-shadow:0 20px 50px -15px rgba(0, 0, 0, .2);
+  }
 
 
   &__img {
@@ -292,7 +358,8 @@ body {
       background: #fff;
 
     }
-    &--panini{
+
+    &--panini {
       margin-bottom: 20px;
     }
   }
@@ -397,10 +464,12 @@ body {
   &__list {
     margin: 0 auto;
   }
-  &__list--dot{
+
+  &__list--dot {
     list-style: circle;
   }
-  &__list-item{
+
+  &__list-item {
     margin-bottom: 15px;
   }
 
@@ -410,7 +479,7 @@ body {
     font-size: 18px;
   }
 
-  &__top{
+  &__top {
     font-weight: bold;
     margin-bottom: 15px;
   }
@@ -451,7 +520,8 @@ body {
 
     margin-bottom: 20px;
   }
-  &__subtitle{
+
+  &__subtitle {
     font-size: 20px;
     font-weight: bold;
     color: #e50046;
@@ -469,7 +539,8 @@ body {
   margin: 50px auto;
   text-align: center;
   overflow: hidden;
-  &--left{
+
+  &--left {
     margin-left: 0;
   }
 }
