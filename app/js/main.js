@@ -11,7 +11,7 @@ $(function () {
   })
 
 
-    $(".hero__link").on(
+    $(".photos__link").on(
       "click",
       function (e) {
         e.preventDefault();
@@ -21,4 +21,5 @@ $(function () {
       }
     );
   
-})
+  
+});
