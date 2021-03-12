@@ -88,7 +88,7 @@ function cleanDist() {
 }
 
 function build() {
-  return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js", 'app/fonts/*.{woff, woff2}'], {
+  return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js", "app/fonts/**/*.*"], {
     base: "app",
   }).pipe(dest("dist"));
 }
