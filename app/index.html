@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header id="up" class="header">
     <div class="container">
       <div class="header__inner">
         <a href="#" class="logo">
@@ -73,14 +73,14 @@
         </p>
       </div>
     </section> -->
-    <section class="catalog" id="catalog">
+    <section class="catalog">
       <div class="container">
         <div class="banner">
           <h2 class="title banner__title">Наша продукция</h2>
         </div>
-        <div class="photos">
+        <div class="photos" id="catalog">
           <div class="bg"></div>
-          <div class="photos__wrapper">
+          <div class="photos__wrapper" id="catalog">
             <a class="photos__link" href="#burger">
               <img class="photos__item" src="images/burger1.jpg" alt="булочки для бургеров">
               <h2 class="photos__theme">Булочки для бургеров и хотдогов</h2>
@@ -102,33 +102,11 @@
               <h2 class="photos__theme">Тостовый хлеб</h2>
               <span class="photos__descr">Тостовый хлеб и тостер – парочка, призванная облегчить жизнь домохозяек</span>
             </a>
-            </div>
+          </div>
         </div>
-        <div id= "burger" class="catalog__theme">
+        <div id="burger" class="catalog__theme">
           <h4 class="catalog__subtitle">Булочки для бургеров и хотдогов</h4>
-          <!-- <p class="catalog__descr">Булочка для бургера идеальна по вкусу: в меру соленая и сладкая, нежная, что
-            подчеркнет вкус ваших бургеров, устоять просто невозможно. <span>Традиционные булочки придутся по вкусу
-              ценителям классики, яркие булочки для креативной публики.</span> </p> -->
           <div class="catalog__recepts">
-            <div class="modal" id="recept">
-              <div class="modal__subtitle">
-                Та самая булочка, которую все знают и любят. Знакомый с детства вкус для поклонников классики.
-              </div>
-              <img src="images/IMG_1739.jpg" alt="булочка" class="modal__img">
-              <ol class="modal__list">
-                <li class="modal__item">
-                  Не вскрывая индивидуальную упаковку, разморозить изделие при комнатной температуре в течение 45-70
-                  мин. (время разморозки зависит от степени заморозки изделия, температурных условий помещения в котором
-                  производится размораживание продукта).
-                </li>
-                <li class="modal__item">
-                  Продукт готов к употреблению.
-                </li>
-                <li class="modal__item">
-                  Не подлежит повторному замораживанию
-                </li>
-              </ol>
-            </div>
           </div>
           <div class="catalog__inner">
             <div class="card">
@@ -273,56 +251,7 @@
                   <td>Россия</td>
                 </tr>
               </table>
-              <div class="modal" id="descr1">
-                <h4 class="modal__title">
-                  Условия хранения и рекомендации по использованию:
-                </h4>
-                <p class="modal__text">
-                  Хранить при температуре хранения от минус 18°С до минус 30 °С – не более 12 месяцев; при температуре
-                  не ниже плюс 6 °С и относительной влажности воздуха не более 75 % - не более 72 часа; Срок хранения в
-                  пределах срока годности при соблюдении условий хранения.
-                </p>
-                <h4 class="modal__title">
-                  Состав:
-                </h4>
-                <p class="modal__text">
-                  мука пшеничная хлебопекарная высшего сорта, вода питьевая, масло подсолнечное растительное
-                  рафинированное дезодорированное, сахар, дрожжи saf-instant (дрожжи Saccharomyces cerevisie,
-                  эмульгатор(сорбитан моностеарат), антиокислитель: аскорбиновая кислота), соль пищевая, семя кунжута,
-                  комплексная пищевая добавка улучшитель хлебопекарный («Мажимикс» (стабилизатор (Е170), мука соевая,
-                  эмульгатор (Е472е), антиокислитель (Е300), вещество для обработки муки (Е 920), мука пшеничная,
-                  ферменты (альфа-амилазы и ксиланаза) , «Мажимикс» с синей этикеткой» (пшеничная мука, соевая мука,
-                  стабилизатор (Е170), эмульгатор (Е472е), антиокислитель (Е300), ферменты (альфа-амилаза и
-                  гемицеллюлаза).
-                  <span>Аллергены:</span>
-                  Семена кунжута
-                </p>
-                <div class="modal__title">
-                  Пищевая ценность на 100 г продукта:
-                </div>
-                <table class="modal__table">
-                  <tr>
-                    <th>Энергетическая ценность</th>
-                    <td>1367,8 кДж / 326,7 ккал</td>
-                  </tr>
-                  <tr>
-                    <th>Жиры</th>
-                    <td>9,5 г</td>
-                  </tr>
-                  <tr>
-                    <th>Углеводы</th>
-                    <td>54 г</td>
-                  </tr>
-                  <tr>
-                    <th>Белки</th>
-                    <td>9 г</td>
-                  </tr>
-                  <tr>
-                    <th>Соль</th>
-                    <td>0,1 г</td>
-                  </tr>
-                </table>
-              </div>
+
               <div class="button-wrapper button-wrapper--left">
                 <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -346,8 +275,8 @@
                 </tr>
                 <tr>
                   <th>EAN-код короба</th>
-                  <td>11111111111111</td>
-                  <td>11111111111111</td>
+                  <td>14670008226158</td>
+                  <td>14670008226332</td>
                 </tr>
                 <tr>
                   <th>Вес</th>
@@ -398,8 +327,8 @@
                 </tr>
                 <tr>
                   <th>EAN-код короба</th>
-                  <td></td>
-                  <td></td>
+                  <td>14670008225960</td>
+                  <td>14670008226028</td>
                 </tr>
                 <tr>
                   <th>Вес</th>
@@ -450,8 +379,8 @@
                 </tr>
                 <tr>
                   <th>EAN-код короба</th>
-                  <td></td>
-                  <td></td>
+                  <td>14670008226219</td>
+                  <td>14670008226363</td>
                 </tr>
                 <tr>
                   <th>Вес</th>
@@ -491,216 +420,11 @@
                   </svg><span></span></a>
               </div>
             </div>
-
-          <!-- <div class="button-wrapper">
-            <a class="arrow-btn" data-fancybox data-src="#recept" href="javascript:;">Рекомендации по
-              выпеканию<span></span></a>
-          </div> -->
-          <div class="card">
-            <img class="card__img" src="images/IMG_1704.jpg" alt="датская">
-            <div class="card__name">Датская <span>для хотдога</span></div>
-            <!-- <p class="card__descr">Мягкая пшеничная булочка для датского хот-дога<span>Равномерно
+            <div class="card">
+              <img class="card__img" src="images/IMG_1704.jpg" alt="датская">
+              <div class="card__name">Датская <span>для хотдога</span></div>
+              <!-- <p class="card__descr">Мягкая пшеничная булочка для датского хот-дога<span>Равномерно
               пропеченная, с однородным мякишем и надрезом сбоку</span> </p> -->
-            <table class="card__table">
-              <tr>
-                <th></th>
-                <th>160 мм</th>
-              </tr>
-              <tr>
-                <th>EAN-код короба</th>
-                <td>14670008226127</td>
-              </tr>
-              <tr>
-                <th>Вес</th>
-                <td>60 г</td>
-              </tr>
-              <tr>
-                <th>Шт в коробке</th>
-                <td>60</td>
-
-              </tr>
-              <tr>
-                <th>Кор/пал</th>
-                <td>33</td>
-
-              </tr>
-              <tr>
-                <th>Срок годности</th>
-                <td>12 месяцев</td>
-
-              </tr>
-              <tr>
-                <th>Страна происхождения</th>
-                <td>RU</td>
-
-              </tr>
-            </table>
-            <div class="button-wrapper button-wrapper--left">
-              <a class="arrow-btn" data-fancybox data-src="#descr" href="javascript:;">Подробнее
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
-                  viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                  <g>
-                    <polygon
-                      points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
-                  </g>
-                </svg><span></span></a>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/IMG_1692.jpg" alt="датская">
-            <div class="card__name">Датская (с кунжутом) <span>для хотдога</span></div>
-            <p class="card__descr">Мягкая пшеничная булочка c кунжутом для датского хот-дога<span>Равномерно
-              пропеченная, с однородным мякишем и надрезом сбоку</span> </p>
-            <table class="card__table">
-              <tr>
-                <th></th>
-                <th>160 мм</th>
-              </tr>
-              <tr>
-                <th>EAN-код короба</th>
-                <td>14670008226080</td>
-              </tr>
-              <tr>
-                <th>Вес</th>
-                <td>60 г</td>
-              </tr>
-              <tr>
-                <th>Шт в коробке</th>
-                <td>60</td>
-
-              </tr>
-              <tr>
-                <th>Кор/пал</th>
-                <td>33</td>
-
-              </tr>
-              <tr>
-                <th>Срок годности</th>
-                <td>12 месяцев</td>
-
-              </tr>
-              <tr>
-                <th>Страна происхождения</th>
-                <td>RU</td>
-
-              </tr>
-            </table>
-            <div class="button-wrapper button-wrapper--left">
-              <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
-                  viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                  <g>
-                    <polygon
-                      points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
-                  </g>
-                </svg><span></span></a>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/IMG_1679.jpg" alt="французская">
-            <div class="card__name">французская <span>для хотдога</span></div>
-            <p class="card__descr">Мягкий пшеничный багет для французского хот-дога с высверленной серединкой. Если
-              готовый хот-дог слегка обжарить на гриле, корочка багета станет хрустящей, как у свежевыпеченного.</p>
-            <table class="card__table">
-              <tr>
-                <th></th>
-                <th>160 мм</th>
-              </tr>
-              <tr>
-                <th>EAN-код короба</th>
-                <td>14670008226110</td>
-              </tr>
-              <tr>
-                <th>Вес</th>
-                <td>60 г</td>
-              </tr>
-              <tr>
-                <th>Шт в коробке</th>
-                <td>60</td>
-
-              </tr>
-              <tr>
-                <th>Кор/пал</th>
-                <td>33</td>
-
-              </tr>
-              <tr>
-                <th>Срок годности</th>
-                <td>12 месяцев</td>
-
-              </tr>
-              <tr>
-                <th>Страна происхождения</th>
-                <td>RU</td>
-
-              </tr>
-            </table>
-            <div class="modal" id="descr2">
-              <h4 class="modal__title">
-                Условия хранения и рекомендации по использованию:
-              </h4>
-              <p class="modal__text">
-                Хранить при температуре хранения от минус 18°С до минус 30 °С – не более 12 месяцев; при температуре
-                не ниже плюс 6 °С и относительной влажности воздуха не более 75 % - не более 72 часа; Срок хранения в
-                пределах срока годности при соблюдении условий хранения.
-              </p>
-              <h4 class="modal__title">
-                Состав:
-              </h4>
-              <p class="modal__text">
-                мука пшеничная хлебопекарная высшего сорта, вода питьевая, сахар, соль пищевая, дрожжи saf-instant
-                (дрожжи Saccharomyces cerevisie, эмульгатор (сорбитан моностеарат), антиокислитель: аскорбиновая
-                кислота), комплекная пищевая добавка улучшитель хлебопекарный (стабилизатор (Е170), мука соевая,
-                эмульгатор (Е472е), антиокислитель (Е300), вещество для обработки муки (Е 920), мука пшеничная,
-                ферменты (альфа-амилазы и ксиланаза).
-                <span>Аллергены:</span>
-                Может содержать следы кунжута
-              </p>
-              <div class="modal__title">
-                Пищевая ценность на 100 г продукта:
-              </div>
-              <table class="modal__table">
-                <tr>
-                  <th>Энергетическая ценность</th>
-                  <td>974,0 кДж / 233,0 ккал</td>
-                </tr>
-                <tr>
-                  <th>Жиры</th>
-                  <td>1,0 г</td>
-                </tr>
-                <tr>
-                  <th>Углеводы</th>
-                  <td>48 г</td>
-                </tr>
-                <tr>
-                  <th>Белки</th>
-                  <td>8 г</td>
-                </tr>
-                <tr>
-                  <th>Соль</th>
-                  <td>0,1 г</td>
-                </tr>
-              </table>
-            </div>
-            <div class="button-wrapper button-wrapper--left">
-              <a class="arrow-btn" data-fancybox data-src="#descr2" href="javascript:;">Подробнее
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
-                  viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                  <g>
-                    <polygon
-                      points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
-                  </g>
-                </svg><span></span></a>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/IMG_1669.jpg" alt="черная булочка">
-            <div class="card__name">черная <span>для хотдога</span></div>
-            <p class="card__descr">Булочка для хотдога идеальна по вкусу: в меру соленая и сладкая, нежная. Что
-              подчеркнет вкус ваших бургеров, устоять просто невозможно. Яркие булочки для креативной публики.</p>
               <table class="card__table">
                 <tr>
                   <th></th>
@@ -708,7 +432,7 @@
                 </tr>
                 <tr>
                   <th>EAN-код короба</th>
-                  <td></td>
+                  <td>14670008226127</td>
                 </tr>
                 <tr>
                   <th>Вес</th>
@@ -717,22 +441,124 @@
                 <tr>
                   <th>Шт в коробке</th>
                   <td>60</td>
-  
+
                 </tr>
                 <tr>
                   <th>Кор/пал</th>
                   <td>33</td>
-  
+
                 </tr>
                 <tr>
                   <th>Срок годности</th>
                   <td>12 месяцев</td>
-  
+
                 </tr>
                 <tr>
                   <th>Страна происхождения</th>
                   <td>RU</td>
-  
+
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="images/IMG_1692.jpg" alt="датская">
+              <div class="card__name">Датская (с кунжутом) <span>для хотдога</span></div>
+              <p class="card__descr">Мягкая пшеничная булочка c кунжутом для датского хот-дога<span>Равномерно
+                  пропеченная, с однородным мякишем и надрезом сбоку</span> </p>
+              <table class="card__table">
+                <tr>
+                  <th></th>
+                  <th>160 мм</th>
+                </tr>
+                <tr>
+                  <th>EAN-код короба</th>
+                  <td>14670008226080</td>
+                </tr>
+                <tr>
+                  <th>Вес</th>
+                  <td>60 г</td>
+                </tr>
+                <tr>
+                  <th>Шт в коробке</th>
+                  <td>60</td>
+
+                </tr>
+                <tr>
+                  <th>Кор/пал</th>
+                  <td>33</td>
+
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="images/IMG_1679.jpg" alt="французская">
+              <div class="card__name">французская <span>для хотдога</span></div>
+              <p class="card__descr">Мягкий пшеничный багет для французского хот-дога с высверленной серединкой. Если
+                готовый хот-дог слегка обжарить на гриле, корочка багета станет хрустящей, как у свежевыпеченного.</p>
+              <table class="card__table">
+                <tr>
+                  <th></th>
+                  <th>160 мм</th>
+                </tr>
+                <tr>
+                  <th>EAN-код короба</th>
+                  <td>14670008226110</td>
+                </tr>
+                <tr>
+                  <th>Вес</th>
+                  <td>60 г</td>
+                </tr>
+                <tr>
+                  <th>Шт в коробке</th>
+                  <td>60</td>
+
+                </tr>
+                <tr>
+                  <th>Кор/пал</th>
+                  <td>33</td>
+
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+
                 </tr>
               </table>
               <div class="button-wrapper button-wrapper--left">
@@ -746,143 +572,163 @@
                     </g>
                   </svg><span></span></a>
               </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/IMG_1697.jpg" alt="зеленая булочка">
-            <div class="card__name">зеленая <span>для хотдога</span></div>
-            <p class="card__descr">Булочка для хотдога идеальна по вкусу: в меру соленая и сладкая, нежная. Что
-              подчеркнет вкус ваших бургеров, устоять просто невозможно. Яркие булочки для креативной публики.</p>
-              <table class="card__table">
-                <tr>
-                  <th></th>
-                  <th>160 мм</th>
-                </tr>
-                <tr>
-                  <th>EAN-код короба</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>Вес</th>
-                  <td>60 г</td>
-                </tr>
-                <tr>
-                  <th>Шт в коробке</th>
-                  <td>60</td>
-  
-                </tr>
-                <tr>
-                  <th>Кор/пал</th>
-                  <td>33</td>
-  
-                </tr>
-                <tr>
-                  <th>Срок годности</th>
-                  <td>12 месяцев</td>
-  
-                </tr>
-                <tr>
-                  <th>Страна происхождения</th>
-                  <td>RU</td>
-  
-                </tr>
-              </table>
-              <div class="button-wrapper button-wrapper--left">
-                <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
-                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                    <g>
-                      <polygon
-                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
-                    </g>
-                  </svg><span></span></a>
-              </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/IMG_1700.jpg" alt="красная булочка">
-            <div class="card__name">красная <span>для хотдога</span></div>
-            <p class="card__descr">Булочка для хотдога идеальна по вкусу: в меру соленая и сладкая, нежная. Что
-              подчеркнет вкус ваших бургеров, устоять просто невозможно. Яркие булочки для креативной публики.</p>
-              <table class="card__table">
-                <tr>
-                  <th></th>
-                  <th>160 мм</th>
-                </tr>
-                <tr>
-                  <th>EAN-код короба</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>Вес</th>
-                  <td>60 г</td>
-                </tr>
-                <tr>
-                  <th>Шт в коробке</th>
-                  <td>60</td>
-  
-                </tr>
-                <tr>
-                  <th>Кор/пал</th>
-                  <td>33</td>
-  
-                </tr>
-                <tr>
-                  <th>Срок годности</th>
-                  <td>12 месяцев</td>
-  
-                </tr>
-                <tr>
-                  <th>Страна происхождения</th>
-                  <td>RU</td>
-  
-                </tr>
-              </table>
-              <div class="button-wrapper button-wrapper--left">
-                <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
-                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                    <g>
-                      <polygon
-                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
-                    </g>
-                  </svg><span></span></a>
-              </div>
-          </div>
-        </div>
-      </div>
-        <!-- <div class="catalog__theme">
-          <h4 class="catalog__subtitle">Булочки для хотдогов</h4>
-          <p class="catalog__descr">Мягкая пшеничная булочка c кунжутом для датского хот-дога<span>Равномерно
-              пропеченная, с однородным мякишем и надрезом сбоку</span> </p>
-          <div class="modal" id="recept2">
-            <div class="modal__subtitle">
-              Та самая булочка для хот-дога, которую все знают и любят. Знакомый с детства вкус для поклонников
-              классики.
             </div>
-            <img src="images/IMG_1704.jpg" alt="булочка" class="modal__img">
-            <ol class="modal__list">
-              <li class="modal__item">
-                Не вскрывая индивидуальную упаковку, разморозить изделие при комнатной температуре в течение 45-70
-                мин. (время разморозки зависит от степени заморозки изделия, температурных условий помещения в котором
-                производится размораживание продукта).
-              </li>
-              <li class="modal__item">
-                Продукт готов к употреблению.
-              </li>
-              <li class="modal__item">
-                Не подлежит повторному замораживанию
-              </li>
-            </ol>
-          </div>
-          <div class="catalog__inner">
+            <div class="card">
+              <img class="card__img" src="images/IMG_1669.jpg" alt="черная булочка">
+              <div class="card__name">черная <span>для хотдога</span></div>
+              <p class="card__descr">Булочка для хотдога идеальна по вкусу: в меру соленая и сладкая, нежная. Что
+                подчеркнет вкус ваших бургеров, устоять просто невозможно. Яркие булочки для креативной публики.</p>
+              <table class="card__table">
+                <tr>
+                  <th></th>
+                  <th>160 мм</th>
+                </tr>
+                <tr>
+                  <th>EAN-код короба</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Вес</th>
+                  <td>60 г</td>
+                </tr>
+                <tr>
+                  <th>Шт в коробке</th>
+                  <td>60</td>
 
+                </tr>
+                <tr>
+                  <th>Кор/пал</th>
+                  <td>33</td>
+
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr2" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="images/IMG_1697.jpg" alt="зеленая булочка">
+              <div class="card__name">зеленая <span>для хотдога</span></div>
+              <p class="card__descr">Булочка для хотдога идеальна по вкусу: в меру соленая и сладкая, нежная. Что
+                подчеркнет вкус ваших бургеров, устоять просто невозможно. Яркие булочки для креативной публики.</p>
+              <table class="card__table">
+                <tr>
+                  <th></th>
+                  <th>160 мм</th>
+                </tr>
+                <tr>
+                  <th>EAN-код короба</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Вес</th>
+                  <td>60 г</td>
+                </tr>
+                <tr>
+                  <th>Шт в коробке</th>
+                  <td>60</td>
+
+                </tr>
+                <tr>
+                  <th>Кор/пал</th>
+                  <td>33</td>
+
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="images/IMG_1700.jpg" alt="красная булочка">
+              <div class="card__name">красная <span>для хотдога</span></div>
+              <p class="card__descr">Булочка для хотдога идеальна по вкусу: в меру соленая и сладкая, нежная. Что
+                подчеркнет вкус ваших бургеров, устоять просто невозможно. Яркие булочки для креативной публики.</p>
+              <table class="card__table">
+                <tr>
+                  <th></th>
+                  <th>160 мм</th>
+                </tr>
+                <tr>
+                  <th>EAN-код короба</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Вес</th>
+                  <td>60 г</td>
+                </tr>
+                <tr>
+                  <th>Шт в коробке</th>
+                  <td>60</td>
+
+                </tr>
+                <tr>
+                  <th>Кор/пал</th>
+                  <td>33</td>
+
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr1" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
+            </div>
           </div>
-          <div class="button-wrapper">
-            <a class="arrow-btn" data-fancybox data-src="#recept2" href="javascript:;">Рекомендации по
-              выпеканию<span></span></a>
-          </div>
-        </div> -->
+          <a href="#catalog" class="link">Наверх</a>
+        </div>
         <div id="bread" class="catalog__theme catalog__theme--two">
           <h4 class="catalog__subtitle">тостовый хлеб</h4>
           <p class="catalog__descr catalog__descr--down">
@@ -1141,8 +987,187 @@
               </div>
             </div>
           </div>
+          <a href="#catalog" class="link">Наверх</a>
         </div>
-        <div id = "panini" class="catalog__theme catalog__theme--two">
+        <div id="rest" class="catalog__theme catalog__theme--two">
+          <h4 class="catalog__subtitle">булочки для ресторанов</h4>
+          <div class="catalog__inner">
+            <div class="card">
+              <img class="card__img" src="images/1583.jpg" alt="ресторанная булочка">
+              <div class="card__name">Мультизлаковая <span>ресторанная булочка</span></div>
+              <p class="card__descr">Хлебные булочки хрустящие снаружи и мягенькие внутри. Отлично подходят к первым
+                блюдам вместо хлеба</p>
+              <table class="card__table">
+                <tr>
+                  <th>EAN код короба</th>
+                  <td>14670008227032</td>
+                </tr>
+                <tr>
+                  <th>Вес шт.</th>
+                  <td>40 г</td>
+                </tr>
+                <tr>
+                  <th>Штук в коробке</th>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <th>корр/палл</th>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr3" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="images/IMG_1587.jpg" alt="ресторанная булочка">
+              <div class="card__name">Отрубная <span>ресторанная булочка</span></div>
+              <p class="card__descr">Хлебные булочки хрустящие снаружи и мягенькие внутри. Отлично подходят к первым
+                блюдам вместо хлеба</p>
+              <table class="card__table">
+                <tr>
+                  <th>EAN код короба</th>
+                  <td>14670008227025</td>
+                </tr>
+                <tr>
+                  <th>Вес шт.</th>
+                  <td>40 г</td>
+                </tr>
+                <tr>
+                  <th>Штук в коробке</th>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <th>корр/палл</th>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr4" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="images/IMG_1577.jpg" alt="ресторанная булочка">
+              <div class="card__name">Пшеничная<span>ресторанная булочка</span></div>
+              <p class="card__descr">Хлебные булочки хрустящие снаружи и мягенькие внутри. Отлично подходят к первым
+                блюдам вместо хлеба</p>
+              <table class="card__table">
+                <tr>
+                  <th>EAN код короба</th>
+                  <td>14670008227001</td>
+                </tr>
+                <tr>
+                  <th>Вес шт.</th>
+                  <td>40 г</td>
+                </tr>
+                <tr>
+                  <th>Штук в коробке</th>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <th>корр/палл</th>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr5" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__img" src="images/IMG_1582.jpg" alt="ресторанная булочка">
+              <div class="card__name">Солодовая<span>ресторанная булочка</span></div>
+              <p class="card__descr">Хлебные булочки хрустящие снаружи и мягенькие внутри. Отлично подходят к первым
+                блюдам вместо хлеба</p>
+              <table class="card__table">
+                <tr>
+                  <th>EAN код короба</th>
+                  <td>14670008227018</td>
+                </tr>
+                <tr>
+                  <th>Вес шт.</th>
+                  <td>40 г</td>
+                </tr>
+                <tr>
+                  <th>Штук в коробке</th>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <th>корр/палл</th>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <th>Срок годности</th>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <th>Страна происхождения</th>
+                  <td>RU</td>
+                </tr>
+              </table>
+              <div class="button-wrapper button-wrapper--left">
+                <a class="arrow-btn" data-fancybox data-src="#descr5" href="javascript:;">Подробнее
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <g>
+                      <polygon
+                        points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33 	" />
+                    </g>
+                  </svg><span></span></a>
+              </div>
+            </div>
+          </div>
+          <a href="#catalog" class="link">Наверх</a>
+        </div>
+        <div id="panini" class="catalog__theme catalog__theme--two">
           <h4 class="catalog__subtitle">сэндвичи и панини</h4>
           <div class="catalog__inner">
             <div class="card">
@@ -1150,16 +1175,16 @@
               <div class="card__name">Классическая панини</div>
               <p class="card__descr">Итальянская булочка, изготовляемая из пшеничной муки и дрожжей, которая при желании
                 может вместе с ингредиентами внутри поджариваться на гриле с рёбрами</p>
-                <table class="card__table card__table--panini">
-                  <tr>
-                    <th>Вес</th>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>Штук в коробке</th>
-                    <td>40</td>
-                  </tr>
-                </table>
+              <table class="card__table card__table--panini">
+                <tr>
+                  <th>Вес</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Штук в коробке</th>
+                  <td>40</td>
+                </tr>
+              </table>
             </div>
             <div class="card">
               <img class="card__img" src="images/IMG_1833.jpg" alt="панини с ветчиной">
@@ -1189,71 +1214,11 @@
               </table>
             </div>
           </div>
+          <a href="#catalog" class="link">Наверх</a>
         </div>
-        <div id="rest" class="catalog__theme catalog__theme--two">
-          <h4 class="catalog__subtitle">булочки для ресторанов</h4>
-          <div class="catalog__inner">
-            <div class="card">
-              <img class="card__img" src="images/1583.jpg" alt="ресторанная булочка">
-              <div class="card__name">Ресторанная булочка 1</div>
-              <p class="card__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id nemo iusto vitae praesentium esse aliquid vel dolores optio illum!</p>
-              <table class="card__table card__table--panini">
-                <tr>
-                  <th>Вес</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>Штук в упаковке</th>
-                  <td></td>
-                </tr>
-              </table>
-            </div>
-            <div class="card">
-              <img class="card__img" src="images/IMG_1587.jpg" alt="ресторанная булочка">
-              <div class="card__name">Ресторанная булочка 2</div>
-              <p class="card__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id nemo iusto vitae praesentium esse aliquid vel dolores optio illum!</p>
-              <table class="card__table card__table--panini">
-                <tr>
-                  <th>Вес</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>Штук в упаковке</th>
-                  <td></td>
-                </tr>
-              </table>
-            </div>
-            <div class="card">
-              <img class="card__img" src="images/IMG_1577.jpg" alt="ресторанная булочка">
-              <div class="card__name">Ресторанная булочка 3</div>
-              <p class="card__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id nemo iusto vitae praesentium esse aliquid vel dolores optio illum!</p>
-              <table class="card__table card__table--panini">
-                <tr>
-                  <th>Вес</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>Штук в упаковке</th>
-                  <td></td>
-                </tr>
-              </table>
-            </div>
-            <div class="card">
-              <img class="card__img" src="images/IMG_1582.jpg" alt="ресторанная булочка">
-              <div class="card__name">Ресторанная булочка 4</div>
-              <p class="card__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id nemo iusto vitae praesentium esse aliquid vel dolores optio illum!</p>
-              <table class="card__table card__table--panini">
-                <tr>
-                  <th>Вес</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>Штук в упаковке</th>
-                  <td></td>
-                </tr>
-              </table>
-            </div>
-          </div>
+        <div class="button-wrapper">
+          <a class="arrow-btn" data-fancybox data-src="#recept" href="javascript:;">Рекомендации по
+            выпеканию<span></span></a>
         </div>
       </div>
     </section>
@@ -1307,14 +1272,21 @@
     </section>
     <section class="connection">
       <div class=container>
-        <h2 class="title connection__title">Заполните форму</h2>
+        <h2 class="title connection__title">Свяжитесь с нами</h2>
         <p class="connection__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
           Рекламных свой семантика страну, не она родного выйти дал его?</p>
         <form class="form" action="#">
-          <input class="form__input" type="text" name="name" placeholder="Имя" required>
+          <input class="form__input" type="text" name="name" placeholder="Имя*" required>
+          <input class="form__input" type="text" name="org" placeholder="ИНН Организации*" required>
           <input class="form__input" type="tel" name="tel" placeholder="Телефон">
-          <input class="form__input" type="email" name="email" placeholder="e-mail" required>
-          <button class="btn form__btn" type="submit">Отправить</button>
+          <input class="form__input" type="email" name="email" placeholder="e-mail*" required>
+          <textarea class="form__input form__input--text" rows="10" type="text" name="message"
+            placeholder="Ваше сообщение"></textarea>
+          <span class="form__agree">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных</span>
+          <div class="button-wrapper button-wrapper--form">
+            <a class="arrow-btn arrow-btn--form" type="submit">Запросить прайс<span></span></a>
+          </div>
+          <!-- <button class="btn form__btn" type="submit">Запросить прайс</button> -->
         </form>
       </div>
     </section>
@@ -1322,23 +1294,277 @@
       <div class="container">
         <div class="container">
           <div class="header__inner">
-            <a href="#" class="logo">
+            <a href="#up" class="logo">
               <img class="logo__img" src="images/logo.png" alt="логотип Колибри">
             </a>
             <div class="contact">
               <address class="contact__items">
-                <p class="contact__item"><span>Адрес:</span> г. Бор, пос. Неклюдово, кв-л Дружба, д. 19А</p>
+                <a class="contact__item"
+                  href="https://yandex.ru/maps/?um=constructor%3A4e17a9efc0b7466e6477f5a7ddcae49d20e83c48563b7199db3ea44116d4ca1f&source=constructorLink">
+                  <span>Адрес:</span>
+                  г. Бор, пос. Неклюдово, кв-л Дружба, д. 19А</a>
 
                 <a class="contact__item" href="mailto:colibri_bor@mail.ru">
                   <span>Почта:</span>colibri_bor@mail.ru ksolodova@yandex.ru</a>
                 <a class="contact__item" href="tel:+8315920700">
-                  <span>Телефоны:</span>(831 59) 20-700, 20-825, 8 (906) 353-16-33</a>
+                  <span>Телефоны:</span>(831 59) 20-700, 20-825,<br> 8 (906) 353-16-33</a>
               </address>
             </div>
+            <a href="#up" class="link">Наверх</a>
           </div>
         </div>
       </div>
     </footer>
+    <div class="modal" id="descr1">
+      <h4 class="modal__title">
+        Условия хранения и рекомендации по использованию:
+      </h4>
+      <p class="modal__text">
+        Хранить при температуре хранения от минус 18°С до минус 30 °С – не более 12 месяцев; при температуре
+        не ниже плюс 6 °С и относительной влажности воздуха не более 75 % - не более 72 часа; Срок хранения в
+        пределах срока годности при соблюдении условий хранения.
+      </p>
+      <h4 class="modal__title">
+        Состав:
+      </h4>
+      <p class="modal__text">
+        мука пшеничная хлебопекарная высшего сорта, вода питьевая, масло подсолнечное растительное
+        рафинированное дезодорированное, сахар, дрожжи saf-instant (дрожжи Saccharomyces cerevisie,
+        эмульгатор(сорбитан моностеарат), антиокислитель: аскорбиновая кислота), соль пищевая, семя кунжута,
+        комплексная пищевая добавка улучшитель хлебопекарный («Мажимикс» (стабилизатор (Е170), мука соевая,
+        эмульгатор (Е472е), антиокислитель (Е300), вещество для обработки муки (Е 920), мука пшеничная,
+        ферменты (альфа-амилазы и ксиланаза) , «Мажимикс» с синей этикеткой» (пшеничная мука, соевая мука,
+        стабилизатор (Е170), эмульгатор (Е472е), антиокислитель (Е300), ферменты (альфа-амилаза и
+        гемицеллюлаза).
+        <span>Аллергены:</span>
+        Семена кунжута
+      </p>
+      <div class="modal__title">
+        Пищевая ценность на 100 г продукта:
+      </div>
+      <table class="modal__table">
+        <tr>
+          <th>Энергетическая ценность</th>
+          <td>1367,8 кДж / 326,7 ккал</td>
+        </tr>
+        <tr>
+          <th>Жиры</th>
+          <td>9,5 г</td>
+        </tr>
+        <tr>
+          <th>Углеводы</th>
+          <td>54 г</td>
+        </tr>
+        <tr>
+          <th>Белки</th>
+          <td>9 г</td>
+        </tr>
+        <tr>
+          <th>Соль</th>
+          <td>0,1 г</td>
+        </tr>
+      </table>
+    </div>
+    <div class="modal" id="descr2">
+      <h4 class="modal__title">
+        Условия хранения и рекомендации по использованию:
+      </h4>
+      <p class="modal__text">
+        Хранить при температуре хранения от минус 18°С до минус 30 °С – не более 12 месяцев; при температуре
+        не ниже плюс 6 °С и относительной влажности воздуха не более 75 % - не более 72 часа; Срок хранения в
+        пределах срока годности при соблюдении условий хранения.
+      </p>
+      <h4 class="modal__title">
+        Состав:
+      </h4>
+      <p class="modal__text">
+        мука пшеничная хлебопекарная высшего сорта, вода питьевая, сахар, соль пищевая, дрожжи saf-instant
+        (дрожжи Saccharomyces cerevisie, эмульгатор (сорбитан моностеарат), антиокислитель: аскорбиновая
+        кислота), комплекная пищевая добавка улучшитель хлебопекарный (стабилизатор (Е170), мука соевая,
+        эмульгатор (Е472е), антиокислитель (Е300), вещество для обработки муки (Е 920), мука пшеничная,
+        ферменты (альфа-амилазы и ксиланаза).
+        <span>Аллергены:</span>
+        Может содержать следы кунжута
+      </p>
+      <div class="modal__title">
+        Пищевая ценность на 100 г продукта:
+      </div>
+      <table class="modal__table">
+        <tr>
+          <th>Энергетическая ценность</th>
+          <td>974,0 кДж / 233,0 ккал</td>
+        </tr>
+        <tr>
+          <th>Жиры</th>
+          <td>1,0 г</td>
+        </tr>
+        <tr>
+          <th>Углеводы</th>
+          <td>48 г</td>
+        </tr>
+        <tr>
+          <th>Белки</th>
+          <td>8 г</td>
+        </tr>
+        <tr>
+          <th>Соль</th>
+          <td>0,1 г</td>
+        </tr>
+      </table>
+    </div>
+    <div class="modal" id="descr3">
+      <h4 class="modal__title">
+        Условия хранения и рекомендации по использованию:
+      </h4>
+      <p class="modal__text">
+        Хранить при температуре хранения от минус 18°С до минус 30 °С – не более 12 месяцев; при температуре
+        не ниже плюс 6 °С и относительной влажности воздуха не более 75 % - не более 72 часа; Срок хранения в
+        пределах срока годности при соблюдении условий хранения.
+      </p>
+      <h4 class="modal__title">
+        Состав:
+      </h4>
+      <p class="modal__text">
+        мука пшеничная хлебопекарная первый сорт, вода питьевая, мука ржаная обдирная, ядро подсолнечника, семя льна,
+        семя кунжута, дрожжи хлебопекарные прессованные, соль пищевая, сахар, молоко сухое обезжиренное, соль пищевая,
+        сахар, пищевая добавка улучшитель хлебопекарный (пшеничная мука, соевая мука, стабилизатор (Е170), эмульгатор
+        (Е472е), антиокислитель (Е300), ферменты (альфа-амилаза и гемицеллюлаза))
+        <span>Аллергены:</span>
+        Может содержать следы кунжута
+      </p>
+      <div class="modal__title">
+        Пищевая ценность на 100 г продукта:
+      </div>
+      <table class="modal__table">
+        <tr>
+          <th>Энергетическая ценность</th>
+          <td>1137 кДж / 272,0 ккал</td>
+        </tr>
+        <tr>
+          <th>Жиры</th>
+          <td>55,0 г</td>
+        </tr>
+        <tr>
+          <th>Углеводы</th>
+          <td>47 г</td>
+        </tr>
+        <tr>
+          <th>Белки</th>
+          <td>8 г</td>
+        </tr>
+        <tr>
+          <th>Соль</th>
+          <td>0,1 г</td>
+        </tr>
+      </table>
+    </div>
+    <div class="modal" id="descr4">
+      <h4 class="modal__title">
+        Условия хранения и рекомендации по использованию:
+      </h4>
+      <p class="modal__text">
+        Хранить при температуре хранения от минус 18°С до минус 30 °С – не более 12 месяцев; при температуре
+        не ниже плюс 6 °С и относительной влажности воздуха не более 75 % - не более 72 часа; Срок хранения в
+        пределах срока годности при соблюдении условий хранения.
+      </p>
+      <h4 class="modal__title">
+        Состав:
+      </h4>
+      <p class="modal__text">
+        мука пшеничная хлебопекарная первый сорт, вода питьевая, мука ржаная обдирная, ядро подсолнечника, семя льна,
+        семя кунжута, дрожжи хлебопекарные прессованные, соль пищевая, сахар, молоко сухое обезжиренное, соль пищевая,
+        сахар, пищевая добавка улучшитель хлебопекарный (пшеничная мука, соевая мука, стабилизатор (Е170), эмульгатор
+        (Е472е), антиокислитель (Е300), ферменты (альфа-амилаза и гемицеллюлаза))
+        <span>Аллергены:</span>
+        Может содержать следы кунжута
+      </p>
+      <div class="modal__title">
+        Пищевая ценность на 100 г продукта:
+      </div>
+      <table class="modal__table">
+        <tr>
+          <th>Энергетическая ценность</th>
+          <td>1036 кДж / 248,0 ккал</td>
+        </tr>
+        <tr>
+          <th>Жиры</th>
+          <td>1,5 г</td>
+        </tr>
+        <tr>
+          <th>Углеводы</th>
+          <td>50 г</td>
+        </tr>
+        <tr>
+          <th>Белки</th>
+          <td>8,5 г</td>
+        </tr>
+        <tr>
+          <th>Соль</th>
+          <td>0,1 г</td>
+        </tr>
+      </table>
+    </div>
+    <div class="modal" id="descr5">
+      <h4 class="modal__title">
+        Условия хранения и рекомендации по использованию:
+      </h4>
+      <p class="modal__text">
+        Хранить при температуре хранения от минус 18°С до минус 30 °С – не более 12 месяцев; при температуре
+        не ниже плюс 6 °С и относительной влажности воздуха не более 75 % - не более 72 часа; Срок хранения в
+        пределах срока годности при соблюдении условий хранения.
+      </p>
+      <h4 class="modal__title">
+        Состав:
+      </h4>
+      <p class="modal__text">
+        мука пшеничная хлебопекарная первый сорт, вода питьевая, мука ржаная обдирная, ядро подсолнечника, семя льна,
+        семя кунжута, дрожжи хлебопекарные прессованные, соль пищевая, сахар, молоко сухое обезжиренное, соль пищевая,
+        сахар, пищевая добавка улучшитель хлебопекарный (пшеничная мука, соевая мука, стабилизатор (Е170), эмульгатор
+        (Е472е), антиокислитель (Е300), ферменты (альфа-амилаза и гемицеллюлаза))
+        <span>Аллергены:</span>
+        Может содержать следы кунжута
+      </p>
+      <div class="modal__title">
+        Пищевая ценность на 100 г продукта:
+      </div>
+      <table class="modal__table">
+        <tr>
+          <th>Энергетическая ценность</th>
+          <td>1091 кДж / 261,0 ккал</td>
+        </tr>
+        <tr>
+          <th>Жиры</th>
+          <td>5,0 г</td>
+        </tr>
+        <tr>
+          <th>Углеводы</th>
+          <td>46 г</td>
+        </tr>
+        <tr>
+          <th>Белки</th>
+          <td>8,0 г</td>
+        </tr>
+        <tr>
+          <th>Соль</th>
+          <td>0,1 г</td>
+        </tr>
+      </table>
+    </div>
+    <div class="modal" id="recept">
+      <ol class="modal__list">
+        <li class="modal__item">
+          Не вскрывая индивидуальную упаковку, разморозить изделие при комнатной температуре в течение 45-70
+          мин. (время разморозки зависит от степени заморозки изделия, температурных условий помещения в котором
+          производится размораживание продукта).
+        </li>
+        <li class="modal__item">
+          Продукт готов к употреблению.
+        </li>
+        <li class="modal__item">
+          Не подлежит повторному замораживанию
+        </li>
+      </ol>
+    </div>
   </main>
 
 </body>
