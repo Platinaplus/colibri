@@ -20,6 +20,24 @@ $(function () {
         $("body,html").animate({ scrollTop: top }, 1500);
       }
     );
-  
+
+    $("form").submit(function() {
+      let th = $(this);
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: th.serialize()
+      }).done(function() {
+        Swal.fire(
+          'Отлично!',
+          'Мы с Вами свяжемся!',
+          'success'
+        );
+        setTimeout(function() {
+          th.trigger("reset");
+        }, 1000);
+      });
+      return false;
+    });
   
 });

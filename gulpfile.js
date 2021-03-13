@@ -60,6 +60,7 @@ function scripts() {
   "node_modules/ion-rangeslider/js/ion.rangeSlider.js",
   "node_modules/rateyo/src/jquery.rateyo.js",
   "node_modules/jquery-form-styler/dist/jquery.formstyler.js",
+  "node_modules/sweetalert2/dist/sweetalert2.all.js",
   "app/js/main.js"
 ])
     .pipe(concat("main.min.js"))
@@ -88,7 +89,7 @@ function cleanDist() {
 }
 
 function build() {
-  return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js", "app/fonts/**/*.*"], {
+  return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js", "app/fonts/**/*.*", "app/**/*.php"], {
     base: "app",
   }).pipe(dest("dist"));
 }
