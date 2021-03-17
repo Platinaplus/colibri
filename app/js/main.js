@@ -11,7 +11,7 @@ $(function () {
   })
 
 
-    $(".photos__link, .link").on(
+    $(".photos__link, .link, .header-btn").on(
       "click",
       function (e) {
         e.preventDefault();

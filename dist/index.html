@@ -13,9 +13,12 @@
   <header id="up" class="header">
     <div class="container">
       <div class="header__inner">
-        <a href="#" class="logo">
+        <a href="/" class="logo">
           <img class="logo__img" src="images/logo.png" alt="логотип Колибри">
         </a>
+        <div class="button-wrapper button-wrapper--form">
+          <a href="#form" class="arrow-btn arrow-btn--form header-btn">Запросить прайс<span></span></a>
+        </div>
         <div class="contact">
           <address class="contact__items">
             <a class="contact__item" href="https://yandex.ru/maps/?um=constructor%3A4e17a9efc0b7466e6477f5a7ddcae49d20e83c48563b7199db3ea44116d4ca1f&source=constructorLink" target="blank"><span>Адрес:</span> г. Бор, пос. Неклюдово, кв-л Дружба, д. 19А</a>
@@ -1270,16 +1273,16 @@
         </div>
       </div>
     </section>
-    <section class="connection">
+    <section id="form" class="connection">
       <div class=container>
         <h2 class="title connection__title">Свяжитесь с нами</h2>
         <p class="connection__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
           Рекламных свой семантика страну, не она родного выйти дал его?</p>
           <form class="form" action="send.php" method="post">
             <!-- Hidden Required Fields -->
-            <input type="hidden" name="project_name" value="Colibri-bake">
-            <input type="hidden" name="admin_email" value="prokofievan@yahoo.com">
-            <input type="hidden" name="form_subject" value="Site-baker-form">
+            <input type="hidden" name="project_name" value="Colibri-icebread">
+            <input type="hidden" name="admin_email" value="colibri_bor@mail.ru">
+            <input type="hidden" name="form_subject" value="Site-icebread-form">
             <!-- END Hidden Required Fields -->
             <input class="form__input" type="text" name="Имя" placeholder="Имя*" required>
             <input class="form__input" type="text" name="ИНН компании" placeholder="ИНН Организации*" required>

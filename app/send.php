@@ -46,7 +46,7 @@ function adopt($text) {
 
 $headers = "MIME-Version: 1.0" . PHP_EOL .
 "Content-Type: text/html; charset=utf-8" . PHP_EOL .
-'From: info@borema.ru' . PHP_EOL .
-'Reply-To: info@borema.ru' . PHP_EOL;
+'From: info@colibribor.ru' . PHP_EOL .
+'Reply-To: info@colibribor.ru' . PHP_EOL;
 
 mail($admin_email, adopt($form_subject), $message, $headers );
